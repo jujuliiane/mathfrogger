@@ -17,7 +17,7 @@ var kill =false;
 
 function preload() {
   myFont = loadFont('mathfrogger/fontes/PressStart2P-Regular.ttf');
-  music = loadSound('mathfrogger/musica/Rewind.mp3',playSound);
+  music = loadSound('mathfrogger/musica/Rewind.mp3');
   seta = loadImage('mathfrogger/imagens/seta.png');
   imgfundot0 = loadImage('mathfrogger/imagens/fundot00.png');
   imgfundot1 = loadImage('mathfrogger/imagens/fundot1.png');
@@ -41,12 +41,9 @@ function preload() {
 
 }
 
-function playSound(){
-  music.play();
-}
-
 function setup() {
   createCanvas(1325, 600);
+  music.play();
   
   xtec = 525;
   ytec = 319;
