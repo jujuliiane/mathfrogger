@@ -16,14 +16,14 @@ var hitFrogRect=false;
 var kill =false;
 
 function preload() {
-  myFont = loadFont('/fontes/PressStart2P-Regular.ttf');
-  music = loadSound('/musica/Rewind.mp3',playSound);
-  seta = loadImage('/imagens/seta.png');
-  imgfundot0 = loadImage('/imagens/fundot00.png');
-  imgfundot1 = loadImage('/imagens/fundot1.png');
-  imgfundot2 = loadImage('/imagens/fundot2.png');
-  gameover = loadImage('/imagens/gameover0.png');
-  telaFinal = loadImage('/imagens/telafinal.png');
+  myFont = loadFont('mathfrogger/fontes/PressStart2P-Regular.ttf');
+  music = loadSound('mathfrogger/musica/Rewind.mp3',playSound);
+  seta = loadImage('mathfrogger/imagens/seta.png');
+  imgfundot0 = loadImage('mathfrogger/imagens/fundot00.png');
+  imgfundot1 = loadImage('mathfrogger/imagens/fundot1.png');
+  imgfundot2 = loadImage('mathfrogger/imagens/fundot2.png');
+  gameover = loadImage('mathfrogger/imagens/gameover0.png');
+  telaFinal = loadImage('mathfrogger/imagens/telafinal.png');
   
   imgcara2 = loadImage('/imagens/cara2.png');
   imgcarr2 = loadImage('/imagens/carr2.png');
