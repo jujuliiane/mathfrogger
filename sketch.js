@@ -17,7 +17,7 @@ var kill =false;
 
 function preload() {
   myFont = loadFont('mathfrogger/fontes/PressStart2P-Regular.ttf');
-  music = loadSound('mathfrogger/musica/Rewind.mp3');
+  music = loadSound('mathfrogger/musica/Rewind.mp3',playSound);
   seta = loadImage('mathfrogger/imagens/seta.png');
   imgfundot0 = loadImage('mathfrogger/imagens/fundot00.png');
   imgfundot1 = loadImage('mathfrogger/imagens/fundot1.png');
@@ -25,20 +25,24 @@ function preload() {
   gameover = loadImage('mathfrogger/imagens/gameover0.png');
   telaFinal = loadImage('mathfrogger/imagens/telafinal.png');
   
-  imgcara2 = loadImage('/imagens/cara2.png');
-  imgcarr2 = loadImage('/imagens/carr2.png');
+  imgcara2 = loadImage('mathfrogger/imagens/cara2.png');
+  imgcarr2 = loadImage('mathfrogger/imagens/carr2.png');
   
-  sapo = loadImage('/imagens/sapo.png');
-  sapo1 = loadImage('/imagens/farvardin-grenouille_frog-smile.png');
-  sapo2 = loadImage('/imagens/farvardin-grenouille_frog-unplzd.png');
+  sapo = loadImage('mathfrogger/imagens/sapo.png');
+  sapo1 = loadImage('mathfrogger/imagens/farvardin-grenouille_frog-smile.png');
+  sapo2 = loadImage('mathfrogger/imagens/farvardin-grenouille_frog-unplzd.png');
   
   for(i=0; i<2;i++){
-    imgcar[i] = loadImage('/imagens/car1.png');
+    imgcar[i] = loadImage('mathfrogger/imagens/car1.png');
   }
   for(i=2; i<4;i++){
-    imgcar[i] = loadImage('/imagens/car2.png');
+    imgcar[i] = loadImage('mathfrogger/imagens/car2.png');
   }
 
+}
+
+function playSound(){
+  music.play();
 }
 
 function setup() {
